@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Traps/Spike.tscn" type="PackedScene" id=1]
+[ext_resource path="res://TileMaps/TileMap.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Characters/Player.tscn" type="PackedScene" id=3]
+
+[node name="Level" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 117, 97 )
+z_index = 1
+
+[node name="Spike" parent="." instance=ExtResource( 1 )]
+position = Vector2( 99, 126 )
+
+[node name="TileMap" parent="." instance=ExtResource( 2 )]
+tile_data = PoolIntArray( 393222, 1, 65537, 393223, 1, 65538, 393224, 1, 65538, 393225, 1, 65539, 458755, 1, 65537, 458756, 1, 65538, 458757, 1, 65538, 458758, 1, 65541, 458759, 1, 393218, 458760, 1, 393218, 458761, 1, 393219, 524288, 1, 65537, 524289, 1, 65539, 524291, 1, 393217, 524292, 1, 393218, 524293, 1, 393218, 524294, 1, 393218, 524295, 1, 393218, 524296, 1, 4, 524297, 1, 458755, 524299, 1, 65537, 524300, 1, 65538, 524301, 1, 65538, 524302, 1, 65538, 524303, 1, 65538, 524304, 1, 65538, 524305, 1, 65539, 589824, 1, 458753, 589825, 1, 458755, 589827, 1, 458753, 589828, 1, 458754, 589829, 1, 458754, 589830, 1, 458754, 589831, 1, 458754, 589832, 1, 458755, 589835, 1, 458753, 589836, 1, 458754, 589837, 1, 458754, 589838, 1, 458754, 589839, 1, 458754, 589840, 1, 458754, 589841, 1, 458755 )
